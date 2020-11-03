@@ -12,14 +12,14 @@ namespace My_Banker
         public string CardHolder
         {
             get { return cardHolder; }
-            set { cardHolder = value; }
+            protected set { cardHolder = value; }
         }
         private string accountNumber;
 
         public string AccountNumber
         {
             get { return accountNumber; }
-            set { accountNumber = value; }
+            protected set { accountNumber = value; }
         }
 
 
@@ -35,7 +35,7 @@ namespace My_Banker
         public string CardPrefix
         {
             get { return cardprefix; }
-            set { cardprefix = value; }
+            protected set { cardprefix = value; }
         }
 
 
@@ -43,7 +43,7 @@ namespace My_Banker
         public string CardNumber
         {
             get { return cardnumber; }
-            set { cardnumber = value; }
+            protected set { cardnumber = value; }
         }
 
         public BaseCard()
