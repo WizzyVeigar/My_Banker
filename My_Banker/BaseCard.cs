@@ -9,7 +9,6 @@ namespace My_Banker
     abstract class BaseCard
     {
         private string cardHolder;
-
         public string CardHolder
         {
             get { return cardHolder; }

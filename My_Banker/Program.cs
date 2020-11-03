@@ -10,6 +10,8 @@ namespace My_Banker
     {
         static void Main(string[] args)
         {
+            //Polymorphism is cool
+            //added appropriate datatype to interfaces (was just strings before)
             List<BaseCard> listOfCards = new List<BaseCard>();
             listOfCards.Add(new VISAElectron("René"));
             listOfCards.Add(new Visa("Peter"));

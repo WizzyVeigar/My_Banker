@@ -17,7 +17,6 @@ namespace My_Banker
         }
 
         private DateTime expirationDate;
-
         public DateTime ExpirationDate
         {
             get { return expirationDate; }

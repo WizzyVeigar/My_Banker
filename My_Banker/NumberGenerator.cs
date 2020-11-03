@@ -9,8 +9,8 @@ namespace My_Banker
 {
     public class NumberGenerator
     {
+        //Non thread safe singleton pattern
         private static NumberGenerator instance;
-
         public static NumberGenerator Instance
         {
             get
@@ -23,7 +23,12 @@ namespace My_Banker
             }
         }
 
-
+        /// <summary>
+        /// Generates <paramref name="digitCount"/> random numbers with a <paramref name="prefix"/> in front
+        /// </summary>
+        /// <param name="digitCount"> How many numbers you want generated outside of prefix</param>
+        /// <param name="prefix">The prefix to set in front of the random numbers</param>
+        /// <returns>returns the random <paramref name="digitCount"/> long string, with <paramref name="prefix"/></returns>
         public string GenerateNumbers(int digitCount, string prefix)
         {
             string cardnumbers = prefix;
