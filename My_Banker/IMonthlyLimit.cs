@@ -8,6 +8,9 @@ namespace My_Banker
 {
     interface IMonthlyLimit
     {
+        /// <summary>
+        /// Monthly Limit for how much you can spend on a given Item
+        /// </summary>
         float MonthlyLimit { get; set; }
     }
 }

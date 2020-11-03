@@ -8,6 +8,9 @@ namespace My_Banker
 {
     interface IExpire
     {
+        /// <summary>
+        /// Datetime for an expiration Date
+        /// </summary>
         DateTime ExpirationDate { get; set; }
     }
 }
